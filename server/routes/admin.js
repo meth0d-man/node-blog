@@ -26,7 +26,7 @@ const jwtSecret = process.env.JWT_SECRET;
 
     router.get('/admin', async (req, res) => {
             try {
-            res.render('admin/index', { layout: adminLayout });
+            res.render('admin/index', { layout: adminLayout});
             } catch (error) {
             console.log(error);
             }
