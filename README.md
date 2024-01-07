@@ -1,24 +1,32 @@
-You need:
-NodeJs
-Database (MongoDB) Free Cluster
+#Using NodeJs and Database (MongoDB) Free Cluster
 
-Create .env file
+#App features:
 
-Create a .env file to store your credentials. Example below:
+Login, Register, List posts, list single post, edit post(with admin rights), delete post
 
-MONGODB_URL = mongodb+srv://mrvladimir011:4Y4VGAHAZhyVwxd8@cluster0.llwmhqg.mongodb.net/blog
+#Create .env file to store your credentials. Example below:
 
-JWT_SECRET = 'mySecret';
+`MONGODB_URL = mongodb+srv://mrvladimir011:4Y4VGAHAZhyVwxd8@cluster0.llwmhqg.mongodb.net/blog`
 
-Run Docker
-docker build -t node-blog .
-docker run -p 5000:5000 node-blog
+`JWT_SECRET = 'mySecret';`
+
+#Run Docker
+
+`docker build -t node-blog .`
+
+`docker run -p 5000:5000 node-blog`
+
+#Run app in browser here http://localhost:5000/
 
 API Endpoints:
 
-Create a user on login, or use an existing user with these cred:
+Create a user on login link, or use an existing user with these cred here http://localhost:5000/admin
 
-username: dovla
-pass: 123456
+`username: dovla`
+
+`pass: 123456`
 
 after that you can go to http://localhost:5000/dashboard and edit with admin rights
+
+#Run test with
+`npm test` from root NODE-BLOG dir
